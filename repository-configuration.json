@@ -142,7 +142,7 @@
 								{
 									"name": "memory.reportFile",
 									"type": "upload",
-									"value": "$REPORTS_HOME/Ps.html",
+									"value": "$REPORTS_HOME/PS1201_A0_0001_BB000000_Cat1_memory_report.html",
 									"required": true
 								},
 								{
