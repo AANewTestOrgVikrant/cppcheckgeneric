@@ -76,7 +76,7 @@
                                 {
                                     "name": "reportDir",
                                     "type": "upload",
-                                    "value": "$GENERIC_HOME",
+                                    "value": "/var/jenkins_home/genericfiles",
                                     "required": true
                                 }
                             ]
