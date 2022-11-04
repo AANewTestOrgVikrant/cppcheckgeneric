@@ -1,0 +1,161 @@
+{
+    "gammaAccess": {
+        "url": "",
+        "token": ""
+    },
+    "repositories": [
+        {
+            "dataDir": "%WORKSPACE%/temp",
+            "repository": {
+                "uid": "8dd8b26a55931e89b0595b22fb9b007f",
+                "projectName": "cpp_remote",
+                "languages": [
+                    "CPP"
+                ],
+                "sources": {
+                    "baseDir": "%WORKSPACE%",
+                    "exclusions": [
+                        "thirdparty",
+                        "third-party",
+                        "3rd-party",
+                        "external",
+                        "generated",
+                        "mock",
+                        "test",
+                        "build"
+                    ]
+                }
+            },
+            "settings": {
+                "additionalOptions": [],
+                "includePaths": []
+            },
+            "modules": {
+                "coverage": [
+                    {
+                        "name": "gcov",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ],
+                "codeissues": [
+                    {
+                        "name": "gamma_cxx",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "name": "gamma_generic",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "GENERIC_HOME",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "cppcheck",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "CodingStyle",
+                                    "type": "multiselect",
+                                    "value": [
+                                        "style",
+                                        "performance",
+                                        "portability"
+                                    ],
+                                    "choices": [
+                                        "style",
+                                        "performance",
+                                        "portability",
+                                        "warning",
+                                        "information",
+                                        "unusedFunction",
+                                        "missingInclude"
+                                    ],
+                                    "required": false
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "unittest": [
+                    {
+                        "name": "gtest",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],"report_processor": [
+					{
+						"name": "ext_report_processor",
+						"config": {
+							"rules": [],
+							"options": [
+								{
+									"name": "dem.reportDir",
+									"type": "upload",
+									"value": "REPORTS_HOME",
+									"required": true
+								},
+								{
+									"name": "memory.reportFile",
+									"type": "upload",
+									"value": "REPORTS_HOME/PS1201_A0_0001_BB000000_Cat1_memory_report.html",
+									"required": true
+								},
+								{
+									"name": "ameos.reportDir",
+									"type": "upload",
+									"value": "REPORTS_HOME",
+									"required": true
+								}
+							]
+						}
+					}
+				]
+            }
+        }
+    ]
+}
