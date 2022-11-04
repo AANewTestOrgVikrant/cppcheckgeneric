@@ -61,7 +61,7 @@
                 "codeissues": [
                     {
                         "name": "gamma_cxx",
-                        "enabled": true,
+                        "enabled": false,
                         "config": {
                             "rules": [],
                             "options": []
@@ -76,7 +76,7 @@
                                 {
                                     "name": "reportDir",
                                     "type": "upload",
-                                    "value": "GENERIC_HOME",
+                                    "value": "$GENERIC_HOME",
                                     "required": true
                                 }
                             ]
@@ -84,7 +84,7 @@
                     },
                     {
                         "name": "cppcheck",
-                        "enabled": true,
+                        "enabled": false,
                         "config": {
                             "rules": [],
                             "options": [
