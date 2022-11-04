@@ -136,19 +136,19 @@
 								{
 									"name": "dem.reportDir",
 									"type": "upload",
-									"value": "REPORTS_HOME",
+									"value": "$REPORTS_HOME",
 									"required": true
 								},
 								{
 									"name": "memory.reportFile",
 									"type": "upload",
-									"value": "REPORTS_HOME/PS1201_A0_0001_BB000000_Cat1_memory_report.html",
+									"value": "$REPORTS_HOME/PS1201_A0_0001_BB000000_Cat1_memory_report.html",
 									"required": true
 								},
 								{
 									"name": "ameos.reportDir",
 									"type": "upload",
-									"value": "REPORTS_HOME",
+									"value": "$REPORTS_HOME",
 									"required": true
 								}
 							]
